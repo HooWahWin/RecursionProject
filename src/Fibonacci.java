@@ -13,14 +13,14 @@ public class Fibonacci {
     }
 
     public static long iterativeFib(int n) {
-        long older = 0;
-        long old = 1;
-        long newvalue = 0;
+        long olderValue = 0;
+        long oldValue = 1;
+        long newValue = 0;
         for (int i = 1; i < n; i++) {
-            newvalue = old + older;
-            older = old;
-            old = newvalue;
+            newValue = oldValue + olderValue;
+            olderValue = oldValue;
+            oldValue = newValue;
         }
-        return newvalue;
+        return newValue;
     }
 }
