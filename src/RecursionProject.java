@@ -5,11 +5,11 @@ public class RecursionProject {
         for (int i = 10; i <= 50; i += 10) {
             // Calculate time in nanosecond for recursive Fibonacci
             long start = System.nanoTime();
-            Fibonacci.recursiveFib(i);
+            long fib = Fibonacci.recursiveFib(i);
             long elapsedRec = System.nanoTime() - start;
             // Calculate time in nanosecond for iterative Fibonacci
             start = System.nanoTime();
-            long fib = Fibonacci.iterativeFib(i);
+            // long fib = Fibonacci.iterativeFib(i);
             long elapsedIter = System.nanoTime() - start;
             System.out.printf("%-10d%-15d%,-20d%,-10d\n", i, fib, elapsedRec, elapsedIter);
         }
