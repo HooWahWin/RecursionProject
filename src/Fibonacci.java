@@ -16,6 +16,9 @@ public class Fibonacci {
         long olderValue = 0;
         long oldValue = 1;
         long newValue = 0;
+        if (n == 1) {
+            return 1;
+        }
         for (int i = 1; i < n; i++) {
             newValue = oldValue + olderValue;
             olderValue = oldValue;
